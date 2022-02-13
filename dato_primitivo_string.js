@@ -21,3 +21,20 @@ for (let j = 0; j < palabrasNegativas.length; j++) {
 }
 
 console.log(contador)
+
+//Mayor y Menor de un array de numeros sin loop
+
+const numbers = [2, 4, 8, 15, 99]
+
+//Modo dificil
+
+salidadUno = numbers.reduce((acc, val)=>{
+    return acc > val ? acc: val
+});
+
+
+let mayor = Math.max(...numbers)
+let menor = Math.min(...numbers)
+console.log(mayor)
+console.log(menor)
+console.log(salidadUno)
