@@ -21,3 +21,4 @@ const {enlace, nombre} = web.redesSociales.youtube
 
 console.log(enlace)
 console.log(nombre)
+console.log(web)
