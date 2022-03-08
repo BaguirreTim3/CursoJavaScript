@@ -12,8 +12,23 @@ let x: [string, number]
 x = ["sara", 24]
 let [cadena, numero] = x
 
+
+enum Color {
+    Red ,
+    Green,
+    Blue,
+}
+let dato: Color = Color.Green
+let colorName: string = Color[2]
+
+console.log(dato)
+console.log(colorName)
+console.log(Color)
+
+
 //console.log(typeof(numero))
-console.log(cadena, numero)
+console.log(cadena)
+console.log(numero)
 console.log(x)
 console.log(fullName)
 console.log(sentences)
