@@ -2,14 +2,20 @@
 fetch('https://pokeapi.co/api/v2/pokemon/')
     .then(res => res.json())
     .then(datos => {
+        let diccPokemones = {nombre: null, url: null}
         let nombresPokemones = []
+        
         datos.results.forEach(element => {
             const {name, url} = element
             //console.log(name)
             //console.log(url)
-            nombresPokemones.push(name)
+            //nombresPokemones.push(name)
+            //urlPokemones.push(url)
+            diccPokemones = {nombre : name, url: url}
+            nombresPokemones.push(diccPokemones)
         });
-        //console.log(nombresPokemones)
+        console.log(nombresPokemones)
+        
     })
     .catch(error => console.log(error))
 
